@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Audit Expert</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet"> 
+      <link href="css/styles.css" rel="stylesheet">
+      <!--Custom Font-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+         rel="stylesheet">
+      
+   </head>
+   <body>
+	   <!-- Side Bar NavBar -->
+      <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+         <div class="profile-sidebar">
+            <div class="profile-userpic">
+               <img src="img/profilepic.png" class="img-responsive" alt="">
+            </div>
+            <div class="profile-usertitle">
+               <div class="profile-usertitle-name">My Profile</div>
+               <div class="profile-usertitle-status">email@email.com</div>
+            </div>
+            <div class="profile-usertitle"> 
+               <em class="fa fa-power-off logout">&nbsp;</em>
+            </div>
+            <div class="clear"></div>
+         </div>
+         <!-- <div class="divider"></div> -->
+         <form name="search" role="search">
+            <div class="form-group">
+               <input type="text" class="form-control sidebarSearch" placeholder="Search">
+            </div>
+         </form>
+         <!-- Nav side bar -->
+         <ul class="nav menu">
+            <li class="active"><a href="#"><img src="img/calimIcon.png"/> Claim Profile</a></li>
+            <li><a href="#"><img src="img/makeRefIcon.png/"> Make a Refrence</a></li>
+            <li><a href="#"><img src="img/myrefTick.png"/> My Refrences</a></li>
+         </ul>
+         <!-- end nav side bar -->
+         <!-- Notifications -->
+         <div class="row notifications">
+            <span>Notifications</span>
+         </div>
+         <!-- Notification Title Row -->
+         <!-- Notification Details -->
+         <div class="row notifyMoreshow ml-0 mr-0">
+            <div class="col-sm-12 margin-top pt-5 pb-20">
+               <span class="entries-img calGray pull-left">
+               <img src="img/grayBag.png" alt="User Avatar">
+               </span>
+               <div class="entries-body clearfix">
+                  <div class="header text-white">
+                     <strong class="primary-font bold">someoneguy@email.com</strong>
+                  </div>
+                  <p class="text-gry">has referred me</p>
+                  <p class="text-gry lastchild">Yesterday at 2:34 pm</p>
+               </div>
+            </div>
+            <div class="col-sm-12 margin-top pt-5 pb-20">
+               <span class="entries-img calGray pull-left">
+               <img src="img/calGray.png" alt="User Avatar">
+               </span>
+               <div class="entries-body clearfix">
+                  <div class="header text-white">
+                     <strong class="primary-font bold">someoneguy@email.com</strong>
+                  </div>
+                  <p class="text-gry">has referred me</p>
+                  <p class="text-gry lastchild">Yesterday at 2:34 pm</p>
+               </div>
+            </div>
+            <div class="col-sm-12 margin-top pt-5 pb-20">
+               <span class="entries-img calGray pull-left">
+               <img src="img/dcalGray.png" alt="User Avatar">
+               </span>
+               <div class="entries-body clearfix">
+                  <div class="header text-gry">
+                     <strong class="primary-font bold">someoneguy@email.com</strong>
+                  </div>
+                  <p class="text-gry">has referred me</p>
+                  <p class="text-gry lastchild">Yesterday at 2:34 pm</p>
+               </div>
+            </div>
+            <div class="col-sm-12 margin-top pt-5 pb-20">
+               <span class="entries-img calGray pull-left">
+               <img src="img/hGray.png" alt="User Avatar">
+               </span>
+               <div class="entries-body clearfix">
+                  <div class="header text-gry">
+                     <strong class="primary-font bold">someoneguy@email.com</strong>
+                  </div>
+                  <p class="text-gry">has referred me</p>
+                  <p class="text-gry lastchild">Yesterday at 2:34 pm</p>
+               </div>
+            </div>
+            <div class="col-sm-12 hiddenCont margin-top pt-5 pb-20">
+               <span class="entries-img calGray pull-left">
+               <img src="img/hGray.png" alt="User Avatar">
+               </span>
+               <div class="entries-body clearfix">
+                  <div class="header text-gry">
+                     <strong class="primary-font bold">someoneguy@email.com</strong>
+                  </div>
+                  <p class="text-gry">has referred me</p>
+                  <p class="text-gry lastchild">Yesterday at 2:34 pm</p>
+               </div>
+            </div>
+            <div class="showolder text-center">
+               <button id="loadMore" class="btn btn-sm showBtn">Show Older</button>
+            </div>
+         </div>
+      </div>
+	  <!--/.sidebar-->
+	  <!--  -->
+      <div class="col-sm-10 col-sm-offset-2 col-xs-12 main">
+         <div class="row ml-0"> 
+            <div class="col-sm-1 col-sm-1 pl-0 ml-0">
+               <img class="imgLogo" src="img/logo.png" />
+			</div>
+			<!-- Top Search Form -->
+            <form name="topsearch">
+               <div class="col-sm-3 pr-0 mt-20">
+                  <input type="text" name="location" placeholder="Denton, TX" class="form-control ml-10 clearval search" />
+               </div>
+               <div class="col-sm-3 pr-0 mt-20">
+                  <input type="text" name="" placeholder="Orthopaedics" class="form-control clearval secsearch" />
+               </div>
+               <div class="col-sm-3 pr-0 mt-20">
+                  <input type="text" name="pos" placeholder="Aetna Choice POS 2" class="clearval form-control ml-5 thirdsearch" />
+               </div>
+               <div class="col-sm-1 pl-10 mt-20">
+                  <button type="submit" value="Search" class="btn-sky">Search</button>
+               </div>
+               <div class="col-sm-1 text-center w-mt-bt">
+                  <a class="circle">
+                  <img id="addSign" src="img/addMore.png" alt="Add More" />
+                  </a>
+               </div>
+			</form>
+			<!-- End Top Search Form -->
+         </div>
+		 <!--/.row-->
+		 <!-- Total Entries -->
+         <div class="row ml-0 darkblue">
+            <div class="col-sm-6 pt-7 pl-0 cal-entry">
+               <span class="text-white fx-md">3367</span>
+               <span class="text-white">entries were found</span>
+               <span class="text-darkblue dotted">.</span>
+               <a href="#" id="cleanmainsearch"><span class="text-darkblue">x Clean Search</span></a>
+            </div>
+            <div class="col-sm-6 text-right pl-0 cal-entry">
+               <div class="row">
+                  <div class="col-sm-10 pr-0">
+                     <div class="listmapfilter">
+                        <input type="submit" id="listfilter" value="LIST" class="btn listfilter active" />
+                        <input type="submit" id="mapfilter" value="MAP" class="btn mapfilter" />
+                     </div>
+                  </div>
+                  <div class="col-sm-2 pl-0">
+                     <input id="filter-btn" class="filter-btn" value="FILTER" />
+                  </div>
+               </div>
+            </div>
+		 </div>
+		 <!-- End Total Entries -->
+         <!--/.row-->
+         <!-- Entries Section -->
+         <div class="row ml-0">
+            <div class="col-md-9 main-entrySection ml-0 pl-0">
+               <!-- First Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img boxPlus pull-left">
+                        <img src="img/boxplus.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Michael A. Catino, MD</strong>
+                           </div>
+                           <p>Orthopade, Artz, Orthopae and...</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Denton,
+                              TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/greenClock.png" />86%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/grayRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenTick.png" />100%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Panel Div -->
+               <!-- Second Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img calBox pull-left">
+                        <img src="img/calBox.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Jay, Stuart Bender, MD <img
+                              src="img/bSign.png" /></strong></div>
+                           <p>Orthopade, Artz, Orthopae, Orthopae</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Hospital Name,
+                              Denton, TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/greenClock.png" />86%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/grayRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenTick.png" />100%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Second Panel Div -->
+               <!-- Third Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img secBox pull-left">
+                        <img src="img/secBox.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Jeffery S, Cantrell, MD <img
+                              src="img/bSign.png" /></strong></div>
+                           <p>Orthopade, Artz, Orthopae, Orthopae</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Hospital Name,
+                              Denton, TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/grayClock.png" />18%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/grayRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/graytick.png" />35%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Third Panel Div -->
+               <!-- Forth Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img calbox3 pull-left">
+                        <img src="img/calbox3.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Michal A, Catino, MD <img
+                              src="img/bSign.png" /></strong></div>
+                           <p>Orthopade, Artz, Orthopae, Orthopae</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Hospital Name,
+                              Denton, TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/grayClock.png" />10%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenTick.png" />35%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Forth Panel Div -->
+               <!-- Fifth Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img hbox pull-left">
+                        <img src="img/hbox.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Jeffery S, Cantrell, MD <img
+                              src="img/bSign.png" /></strong></div>
+                           <p>Orthopade, Artz, Orthopae, Orthopae</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Hospital Name,
+                              Denton, TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/grayClock.png" />10%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenTick.png" />35%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Forth Panel Div -->
+               <!-- Fifth Panel Div -->
+               <div class="panel panel-default entries">
+                  <div class="left clearfix pb-11">
+                     <div class="col-sm-6 pl-0">
+                        <span class="entries-img secBox pull-left">
+                        <img src="img/secBox.png" alt="User Avatar" />
+                        </span>
+                        <div class="entries-body clearfix">
+                           <div class="header"><strong class="primary-font bold">Jeffery S, Cantrell, MD <img
+                              src="img/bSign.png" /></strong></div>
+                           <p>Orthopade, Artz, Orthopae, Orthopae</p>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="bold">Hospital Name,
+                              Denton, TX</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 pt-15 text-right pr-10">
+                        <div class="col-sm-4 pr-0 ">
+                           <span class="bold"><img class="mr-2" src="img/grayClock.png" />10%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenRotate.png" />75%</span>
+                        </div>
+                        <div class="col-sm-4 pr-0">
+                           <span class="bold"><img class="mr-2" src="img/greenTick.png" />35%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End Forth Panel Div -->
+            </div>
+            <!--/.col-->
+            <div class="col-md-3 pl-0 pr-0">
+               <div class="panel panel-default timelinepanel">
+                  <div class="panel-body timeline-container">
+                     <ul class="nav menu">
+                        <li class="active"><a href="#"><img src="img/everyone.png"/>Everyone</a></li>
+                        <li><a href="#"><img src="img/rightSideTikc.png"/>My Refrences</a></li>
+                        <li><a href="#"><img src="img/popular.png/"> popular</a></li>
+                        <li><a href="#"><img src="img/rightSideTikc.png"/>Suggestions</a></li>
+                     </ul>
+                     <hr/>
+                     <div class="divider"> </div>
+                     <!-- CheckBox Insurance Type -->
+                     <div class="row pl-30 mt--10">
+                        <span class="text-gryDark dblock heading">INSURANCE TYPE</span>
+                        <label class="dblock">
+                        <input type="checkbox" class=""/>
+                        Gov and Private	
+                        </label>
+                        <label class="dblock">
+                        <input type="checkbox" class=""/>
+                        Gov and Private	
+                        </label> 
+                     </div>
+                     <div class="row pl-30">
+                        <span class="text-gryDark dblock heading">WORK HOURS</span>
+                        <label class="dblock">
+                        <input type="checkbox" class=""/>
+                        Open now	
+                        </label>
+                        <label class="dblock">
+                        <input type="checkbox" class=""/>
+                        Open Today	
+                        </label> 
+                        <label class="dblock">
+                        <input type="checkbox" class=""/>
+                        Closed
+                        </label> 
+                     </div>
+                     <div class="row pl-30">
+                        <span class="text-gryDark dblock heading">Keywords</span>
+                        <div class="btn-group">
+                           <input id="searchinput" placeholder="My keyword here" type="search" class="searchinput form-control">
+                           <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
+                        </div>
+                        <div class="addingSearchKeyword">
+                           <div class="btn searchtag">long Keyword <span class="cross">X</span></div>
+                           <div class="btn searchtag">Keyword <span class="cross">X</span></div>
+                           <div class="btn searchtag">verylongKeyword <span class="cross">X</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.col-->
+         </div>
+         <!--/.row-->
+         <!-- End Entries Section -->
+      </div>
+      <!--/.main-->
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/custom.js"></script>
+   </body>
+</html>
+
