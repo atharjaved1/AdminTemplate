@@ -3,4 +3,4 @@
 ### Top Search Controls (With Clean Search Button)
 ### Section for total entries
 ### Entries Details 
-### Left Side Bar Section(clear search with serach icon)
+### Left Side Bar Section(clear search with cross icon)
